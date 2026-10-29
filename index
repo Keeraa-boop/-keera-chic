@@ -1,0 +1,221 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keera Chic Accessories</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f8efe2;
+      color: #593b27;
+      font-family: Georgia, serif;
+    }
+
+    /* PAGE D'ACCUEIL */
+    .hero {
+      width: 100%;
+      height: 100vh;
+      height: 100svh;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding: 35px 20px 45px;
+
+      background:
+        linear-gradient(
+          to bottom,
+          transparent 70%,
+          rgba(53, 34, 21, 0.42) 100%
+        ),
+        url("file_0000000002a881f5b1d2d8523bdcbe60.png");
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .hero-content {
+      text-align: center;
+      width: 100%;
+      max-width: 420px;
+    }
+
+    .subtitle {
+      color: white;
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 4px;
+      margin-bottom: 24px;
+      text-shadow: 0 2px 8px #493322;
+    }
+
+    .shop-button {
+      display: inline-block;
+      padding: 17px 25px;
+      background: #fff1dc;
+      color: #65452c;
+      border: 1px solid #b8955d;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 10px;
+      letter-spacing: 2px;
+    }
+
+    .scroll {
+      color: white;
+      font-family: Arial, sans-serif;
+      font-size: 10px;
+      letter-spacing: 3px;
+      margin-top: 22px;
+      text-shadow: 0 2px 8px #493322;
+    }
+
+    /* COLLECTION */
+    .collection {
+      padding: 65px 20px;
+      text-align: center;
+      background: #fbf6ef;
+    }
+
+    .label {
+      font-family: Arial, sans-serif;
+      font-size: 10px;
+      letter-spacing: 4px;
+      color: #a5804d;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 38px;
+      font-weight: normal;
+      margin-bottom: 15px;
+    }
+
+    .description {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      color: #8b7765;
+      line-height: 1.9;
+      margin: 0 auto 35px;
+      max-width: 300px;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      max-width: 550px;
+      margin: auto;
+    }
+
+    .category {
+      padding: 30px 10px;
+      background: #f2e5d3;
+      border: 1px solid #dfc7a8;
+      color: #65452c;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+
+    .category span {
+      display: block;
+      font-size: 25px;
+      color: #b08a50;
+      margin-bottom: 12px;
+    }
+
+    footer {
+      background: #543824;
+      color: #f8ead5;
+      padding: 35px 15px;
+      text-align: center;
+    }
+
+    footer .brand {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    footer p {
+      font-family: Arial, sans-serif;
+      font-size: 9px;
+      letter-spacing: 4px;
+      color: #d8bb90;
+    }
+
+    @media (min-width: 700px) {
+      .categories {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="subtitle">ELEGANCE IN EVERY DETAIL</p>
+
+        <a href="#collection" class="shop-button">
+          DISCOVER THE COLLECTION
+        </a>
+
+        <p class="scroll">SCROLL TO EXPLORE ↓</p>
+      </div>
+    </section>
+
+    <section class="collection" id="collection">
+      <p class="label">KEERA CHIC ACCESSORIES</p>
+
+      <h1>Find Your Elegance</h1>
+
+      <p class="description">
+        Des accessoires délicats pour sublimer chaque détail
+        et révéler votre élégance au quotidien.
+      </p>
+
+      <div class="categories">
+        <a href="#collection" class="category">
+          <span>✧</span>BAGUES
+        </a>
+
+        <a href="#collection" class="category">
+          <span>◇</span>BOUCLES
+        </a>
+
+        <a href="#collection" class="category">
+          <span>♡</span>PARURES
+        </a>
+
+        <a href="#collection" class="category">
+          <span>⌁</span>COLLIERS
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand">Keera Chic</div>
+    <p>ACCESSORIES</p>
+  </footer>
+
+</body>
+</html>
